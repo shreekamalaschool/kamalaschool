@@ -1,81 +1,44 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-/* Header */
-.header {
-  background-color: #004080;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #0066cc;
-  padding: 10px;
-  text-align: center;
-}
-.navbar ul {
-  list-style: none;
-}
-.navbar ul li {
-  display: inline;
-  margin: 0 15px;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(to right, #0066cc, #3399ff);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-/* Teachers Section */
-.teachers {
+/* Admission Form Styling */
+.admission-form-section {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #e6f2ff;
   text-align: center;
 }
-.teacher-card {
-  display: inline-block;
-  margin: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  width: 200px;
+
+.admission-form {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.teacher-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+
+.admission-form label {
+  display: block;
+  margin: 15px 0 5px;
+  text-align: left;
 }
 
-/* Footer */
-.footer {
+.admission-form input,
+.admission-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.admission-form button {
   background-color: #004080;
   color: white;
-  text-align: center;
-  padding: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admission-form button:hover {
+  background-color: #003366;
 }
