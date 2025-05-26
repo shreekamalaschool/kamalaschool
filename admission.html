@@ -3,58 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admissions - Shree Kamala Secondary School</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>+2 Science Admission Form 2025</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <!-- Header -->
-  <header class="bg-blue-900 text-white">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Shree Kamala Secondary School</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="academics.html" class="hover:underline">Academics</a>
-        <a href="admissions.html" class="underline font-semibold">Admissions</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <!-- Main Content -->
-  <section class="container mx-auto px-4 py-12 max-w-3xl">
-    <h2 class="text-3xl font-bold mb-6">Admissions</h2>
-    <p class="mb-4">We welcome students of all backgrounds. Here's how to apply:</p>
+  <section class="admission-form-section">
+    <h2>+2 Science Admission Form – 2025</h2>
+    <form class="admission-form" action="#" method="post" enctype="multipart/form-data">
 
-    <h3 class="text-xl font-semibold mb-2">Admission Process</h3>
-    <ul class="list-disc list-inside mb-4 space-y-1">
-      <li>Visit the school office for the application form.</li>
-      <li>Submit necessary documents (birth certificate, previous transcripts).</li>
-      <li>Attend an entrance test and interview (if applicable).</li>
-      <li>Receive confirmation of admission and pay fees.</li>
-    </ul>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
 
-    <h3 class="text-xl font-semibold mb-2">Requirements</h3>
-    <ul class="list-disc list-inside mb-4 space-y-1">
-      <li>Completed application form</li>
-      <li>Birth certificate and recent photos</li>
-      <li>Past academic records</li>
-    </ul>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
 
-    <h3 class="text-xl font-semibold mb-2">Important Dates</h3>
-    <p>Admissions typically begin in <strong>Baisakh (April)</strong>. Visit or contact us for current deadlines.</p>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="school">Previous School:</label>
+      <input type="text" id="school" name="school" required />
+
+      <label for="gpa">SEE GPA:</label>
+      <input type="text" id="gpa" name="gpa" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="guardian">Guardian’s Full Name:</label>
+      <input type="text" id="guardian" name="guardian" required />
+
+      <label for="guardian-phone">Guardian’s Phone:</label>
+      <input type="tel" id="guardian-phone" name="guardian-phone" required />
+
+      <label for="photo">Upload Passport Size Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white mt-12">
-    <div class="container mx-auto px-4 py-6 text-sm">
-      <p><strong>Shree Kamala Secondary School</strong></p>
-      <p>Kamalamai Municipality -04, Dhungrebash, Sindhuli</p>
-      <p>Estd: 2007 BS / 1950 AD</p>
-      <p>Email: <a href="mailto:shreekamalaschool1950@gmail.com" class="underline">shreekamalaschool1950@gmail.com</a></p>
-      <p>Contact No: 047520203</p>
-      <p class="mt-2">&copy; 2025 Shree Kamala Secondary School. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>
