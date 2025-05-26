@@ -1,73 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shree Kamala Secondary School</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-800 font-sans">
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Navbar -->
-  <header class="bg-blue-900 text-white">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Shree Kamala Secondary School</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="academics.html" class="hover:underline">Academics</a>
-        <a href="admissions.html" class="hover:underline">Admissions</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <!-- Hero / Welcome Section -->
-  <section class="bg-gray-100 py-12 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Welcome to Shree Kamala Secondary School</h2>
-      <p class="text-lg text-gray-700">Providing quality education since 1950 AD (2007 BS) in Kamalamai Municipality-04, Dhungrebash, Sindhuli.</p>
-    </div>
-  </section>
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
-  <!-- Announcements -->
-  <section class="py-8">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-4">Latest Announcements</h3>
-      <ul class="space-y-3">
-        <li class="bg-blue-100 p-4 rounded">Admissions open for the new academic year 2082. Apply by Ashar 15.</li>
-        <li class="bg-green-100 p-4 rounded">Science and Art Exhibition on Jestha 20 – All are welcome!</li>
-        <li class="bg-yellow-100 p-4 rounded">Mid-Term Exams start from Jestha 25. Prepare accordingly.</li>
-      </ul>
-    </div>
-  </section>
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-  <!-- Quick Links -->
-  <section class="py-8 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-4">Quick Links</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="about.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">About Us</a>
-        <a href="academics.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">Academic Programs</a>
-        <a href="admissions.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">Admission Info</a>
-        <a href="student-life.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">Student Life</a>
-        <a href="parents-community.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">Parents & Community</a>
-        <a href="contact.html" class="block p-4 bg-white rounded shadow hover:bg-blue-50">Contact Us</a>
-      </div>
-    </div>
-  </section>
+header h1 {
+  font-size: 2rem;
+}
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white mt-12">
-    <div class="container mx-auto px-4 py-6 text-sm">
-      <p><strong>Shree Kamala Secondary School</strong></p>
-      <p>Kamalamai Municipality -04, Dhungrebash, Sindhuli</p>
-      <p>Estd: 2007 BS / 1950 AD</p>
-      <p>Email: <a href="mailto:shreekamalaschool1950@gmail.com" class="underline">shreekamalaschool1950@gmail.com</a></p>
-      <p>Contact No: 047520203</p>
-      <p class="mt-2">&copy; 2025 Shree Kamala Secondary School. All rights reserved.</p>
-    </div>
-  </footer>
+/* Navigation */
+nav {
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
 
-</body>
-</html>
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Teacher section */
+.teachers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.teacher-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.teacher-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.teacher-card h3 {
+  margin: 10px 0 5px;
+  color: #004080;
+}
+
+.teacher-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
